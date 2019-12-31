@@ -40,6 +40,9 @@ func (g *Game) Update() {
 				fmt.Println("El usuario se desplazará hacia arriba")
 				g.player.Position.Y -= 5
 			}
+			// if g.player.Position.X - g.player.Size.X/2 {
+
+			// }
 			if rl.IsKeyDown(rl.KeyD) || rl.IsKeyDown(rl.KeyRight) {
 				g.player.Position.X += 5
 			}

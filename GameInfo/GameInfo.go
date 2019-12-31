@@ -5,9 +5,9 @@ type GmInfo struct {
 }
 
 type GUI struct {
-	Height int32
 	Width  int32
+	Height int32
 }
 
 var GInfo = GmInfo{"Game"}
-var Screen = GUI{800, 600}
+var Screen = GUI{800, 450}
