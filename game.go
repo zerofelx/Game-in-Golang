@@ -1,9 +1,20 @@
 package main
 
-import rl "github.com/gen2brain/raylib-go/raylib"
+import (
+	rl "github.com/gen2brain/raylib-go/raylib"
+	"github.com/zerofelx/GameC/GameInfo"
+	"github.com/zerofelx/GameC/ge"
+)
+
+var GI = GameInfo.GInfo
+var Screen = GameInfo.Screen
 
 func main() {
-	rl.InitWindow(800, 450, "Game")
+	rl.InitWindow(Screen.Width, Screen.Height, GI.Title)
+
+	// Iniciar juego
+	game := ge.NewGame()
+
 	rl.SetTargetFPS(60)
 
 	for !rl.WindowShouldClose() {
