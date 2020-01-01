@@ -7,6 +7,6 @@ import (
 type Player struct {
 	Position rl.Vector2
 	Size     rl.Vector2
-	Life     int
+	Life     float32
 	Speed    float32
 }
