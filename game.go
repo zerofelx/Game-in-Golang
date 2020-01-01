@@ -49,16 +49,16 @@ func main() {
 		rl.DrawRectangleLines(Life.X, Life.Y, Life.Size, 15, rl.White)
 
 		rl.DrawRectangle(int32(PlayerX-float32(Screen.Width/3)), int32(PlayerY+50), int32(MusicTimePlayed), 12, rl.Maroon)
-		if rl.IsKeyDown(rl.KeyDown) {
+		if rl.IsKeyDown(rl.KeyS) {
 			PlayerY += S
 		}
-		if rl.IsKeyDown(rl.KeyUp) {
+		if rl.IsKeyDown(rl.KeyW) {
 			PlayerY -= S
 		}
-		if rl.IsKeyDown(rl.KeyLeft) {
+		if rl.IsKeyDown(rl.KeyA) {
 			PlayerX -= S
 		}
-		if rl.IsKeyDown(rl.KeyRight) {
+		if rl.IsKeyDown(rl.KeyD) {
 			PlayerX += S
 		}
 		if rl.IsKeyPressed(rl.KeyK) {
