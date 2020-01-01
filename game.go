@@ -46,6 +46,7 @@ func main() {
 
 		Life := GUI.LifeGUI(PlayerX, PlayerY, Player.Life)
 		rl.DrawRectangle(Life.X, Life.Y, Life.Size, 15, rl.Maroon)
+		rl.DrawRectangleLines(Life.X, Life.Y, Life.Size, 15, rl.White)
 
 		rl.DrawRectangle(int32(PlayerX-float32(Screen.Width/3)), int32(PlayerY+50), int32(MusicTimePlayed), 12, rl.Maroon)
 		if rl.IsKeyDown(rl.KeyDown) {
